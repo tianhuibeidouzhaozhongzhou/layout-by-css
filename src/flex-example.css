@@ -1,37 +1,123 @@
-#outer ul{
-  padding: 0px;
-}
-
-#outer li{
-  list-style: none;
-}
-
-#ul_inner{
+.desk{
+  height: 800px;
   display: flex;
-  flex-flow: column nowrap
-}
-
-#div_inner{
-  display: inline-flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+  background-color: lightblue;
   justify-content: space-between;
+  flex-direction: column;
 }
 
-.large{
-  width: 80px;
-  height: 40px;
-  background-color: red;
+.sieve-row{
+
 }
 
-.middle{
+.sieve{
   width: 60px;
-  height: 30px;
-  background-color: blue;
+  height: 60px;
+  background-color: whitesmoke;
 }
 
-.small{
-  width: 20px;
-  height: 80px;
-  background-color: green;
+.dot{
+  background-color: red;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+.sieve[dot="1"]{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sieve[dot="2"]{
+  display: flex;
+  justify-content: space-around;
+}
+
+.sieve[dot="2"]>.dot:nth-child(2){
+  align-self: flex-end;
+}
+
+.sieve[dot="3"]{
+  display: flex;
+  justify-content: space-around;
+}
+
+.sieve[dot="3"]>.dot:nth-child(2){
+  align-self: center;
+}
+.sieve[dot="3"]>.dot:nth-child(3){
+  align-self: flex-end;
+}
+
+.sieve[dot="4"]{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sieve[dot="4"]>div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.sieve[dot="5"]{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sieve[dot="5"]>div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.sieve[dot="6"]{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sieve[dot="6"]>div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.sieve[dot="7"]{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sieve[dot="7"]>div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.sieve[dot="8"]{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sieve[dot="8"]>div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.sieve[dot="8"]>div:nth-child(3){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sieve[dot="9"]{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sieve[dot="9"]>div{
+  display: flex;
+  justify-content: space-around;
 }
