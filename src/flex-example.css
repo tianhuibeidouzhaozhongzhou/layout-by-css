@@ -1,18 +1,22 @@
 .desk{
-  height: 800px;
-  display: flex;
+  height: 100%;
+  width: 100%;
+  min-width: 360px;
+  min-height: 360px;
+  display: inline-flex;
   background-color: lightblue;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
 }
 
-.sieve-row{
-
+.desk>div{
+  display: flex;
+  justify-content: space-around;
 }
 
 .sieve{
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   background-color: whitesmoke;
 }
 
