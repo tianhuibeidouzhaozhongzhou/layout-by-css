@@ -27,6 +27,41 @@
   border-radius: 50%;
 }
 
+.dot::before{
+  color: white;
+  position: relative;
+  left: 10px;
+  top: 3px;
+}
+
+.dot[dot-order="1"]::before{
+  content: "1";
+}
+.dot[dot-order="2"]::before{
+  content: "2";
+}
+.dot[dot-order="3"]::before{
+  content: "3";
+}
+.dot[dot-order="4"]::before{
+  content: "4";
+}
+.dot[dot-order="5"]::before{
+  content: "5";
+}
+.dot[dot-order="6"]::before{
+  content: "6";
+}
+.dot[dot-order="7"]::before{
+  content: "7";
+}
+.dot[dot-order="8"]::before{
+  content: "8";
+}
+.dot[dot-order="9"]::before{
+  content: "9";
+}
+
 .sieve[dot="1"]{
   display: flex;
   justify-content: center;
@@ -89,26 +124,18 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-content: space-around;
 }
 
-.sieve[dot="8"]{
+.sieve[dot="8"],.sieve[dot="9"]{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .sieve[dot="8"]>div:last-child{
   visibility: hidden;
 }
 
-.sieve[dot="9"]{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.sieve[dot="9"]>div{
-  display: flex;
-  justify-content: space-around;
-}
