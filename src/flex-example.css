@@ -22,8 +22,8 @@
 
 .dot{
   background-color: red;
-  width: 30%;
-  height: 30%;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 
@@ -78,38 +78,27 @@
 
 .sieve[dot="6"]{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-}
-
-.sieve[dot="6"]>div{
-  display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .sieve[dot="7"]{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-}
-
-.sieve[dot="7"]>div{
-  display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .sieve[dot="8"]{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.sieve[dot="8"]>div{
-  display: flex;
-  justify-content: space-around;
-}
-
-.sieve[dot="8"]>div:nth-child(3)>.dot:nth-child(3){
+.sieve[dot="8"]>div:last-child{
   visibility: hidden;
 }
 
